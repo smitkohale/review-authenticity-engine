@@ -1,5 +1,9 @@
-streamlit
-torch
-transformers
-shap
-matplotlib
+streamlit==1.49.0
+torch==2.8.0
+transformers==4.55.0
+sentence-transformers==5.1.0
+networkx==3.5
+python-louvain==0.16
+shap==0.48.0
+pandas==2.3.1
+numpy==2.3.2
