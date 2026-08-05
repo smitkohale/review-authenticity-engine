@@ -1,5 +1,5 @@
 streamlit==1.49.0
-torch==2.8.0
+torch>=2.9.0
 transformers==4.55.0
 sentence-transformers==5.1.0
 networkx==3.5
