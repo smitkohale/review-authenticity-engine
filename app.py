@@ -859,18 +859,22 @@ def load_model():
     model.eval()
     return tokenizer, model
 
-tokenizer, model = load_model()
+tokenizer = None
+model = None
 
 def render_html(markup: str) -> None:
     """Render custom HTML without leading indentation becoming Markdown code."""
     st.markdown(textwrap.dedent(markup).strip(), unsafe_allow_html=True)
 
 def predict_proba(texts):
+    global tokenizer, model
+    if tokenizer is None or model is None:
+        with st.spinner("Loading AI model (first run only)..."):
+            tokenizer, model = load_model()
     enc = tokenizer(list(texts), truncation=True, padding=True, max_length=128, return_tensors="pt")
     with torch.no_grad():
         logits = model(**enc).logits
     return torch.softmax(logits, dim=-1).numpy()
-
 
 # ==============================================================================
 # DATA LOADING, RISK SCORING, & DISPLAY-ONLY QUALITY FILTERING
