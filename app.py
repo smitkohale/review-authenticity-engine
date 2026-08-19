@@ -1171,6 +1171,7 @@ with tab_scorer:
                 render_html('</div></div>')
 
             except Exception as e:
+                st.exception(e)
                 render_html(f"""
                 <div class="error-card">
                     <div class="error-card-title">⚠️ Analysis Error</div>
