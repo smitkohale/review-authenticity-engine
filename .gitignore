@@ -2,3 +2,8 @@
 __pycache__/
 review_authenticity_model_v5/
 *.pyc
+data/
+results/demo/
+.pytest_cache/
+.ruff_cache/
+.claude/

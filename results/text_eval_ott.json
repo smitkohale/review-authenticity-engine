@@ -1,0 +1,74 @@
+{
+  "dataset": "ott",
+  "path": "data/ott/op_spam_v1.4",
+  "model": "review_authenticity_model_v5",
+  "n": 1600,
+  "seconds_per_review": 0.07152283355593682,
+  "overall": {
+    "n": 1600,
+    "positives": 800,
+    "accuracy": 0.5,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "fpr": 0.0,
+    "roc_auc": 0.5918546875,
+    "pr_auc": 0.5798692339147287,
+    "recall_at_0.01_fpr": 0.02875,
+    "threshold_at_fpr": 2.4466991817462258e-05,
+    "ece": 0.49997876812089204,
+    "brier": 0.49997858419361163
+  },
+  "reliability": [
+    {
+      "bin": 0,
+      "mean_score": 2.1231879107972416e-05,
+      "fraction_fake": 0.5,
+      "n": 1600
+    }
+  ],
+  "by_polarity": {
+    "negative": {
+      "n": 800,
+      "label": null,
+      "share_flagged": 0.0,
+      "mean_p_fake": 2.1144613128853962e-05
+    },
+    "positive": {
+      "n": 800,
+      "label": null,
+      "share_flagged": 0.0,
+      "mean_p_fake": 2.131914698111359e-05
+    }
+  },
+  "attacks": {
+    "none": {
+      "recall": 0.0,
+      "fpr": 0.0
+    },
+    "typos": {
+      "recall": 0.0,
+      "fpr": 0.0
+    },
+    "homoglyphs": {
+      "recall": 0.0,
+      "fpr": 0.0
+    },
+    "synonym_swap": {
+      "recall": 0.0,
+      "fpr": 0.0
+    },
+    "add_flaw_sentence": {
+      "recall": 0.0,
+      "fpr": 0.0
+    },
+    "lowercase_no_punct": {
+      "recall": 0.0,
+      "fpr": 0.0
+    },
+    "word_dropout": {
+      "recall": 0.0,
+      "fpr": 0.0
+    }
+  }
+}
