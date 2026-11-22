@@ -5,6 +5,9 @@ graph that looks for groups of accounts acting together.
 
 **Live demo:** https://review-trust-engine.streamlit.app/
 
+The demo runs on Streamlit's free tier. If it shows a sleeping page, click the wake-up button and
+allow about 30 seconds; the first scored review also takes a few seconds while the model downloads.
+
 ## The question
 
 Do behaviour signals (who reviews what, and when) catch coordinated fake reviews that a text
