@@ -1,0 +1,6 @@
+# Evaluation scripts and tests. The deployed app only needs requirements.txt.
+-r requirements.txt
+scikit-learn==1.9.0
+scipy>=1.13
+pytest==8.3.3
+ruff==0.6.9
