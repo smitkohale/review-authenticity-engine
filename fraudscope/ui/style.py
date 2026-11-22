@@ -13,7 +13,7 @@ CSS = """
   --band: #efe9d6;
 }
 [data-testid="stDecoration"] { display: none; }
-.block-container { max-width: 1120px; padding-top: 2rem; padding-bottom: 4rem; }
+.block-container { max-width: 1120px; padding-top: 4.5rem; padding-bottom: 4rem; }
 
 /* Header */
 .app-header { padding-bottom: 1.1rem; margin-bottom: 0.3rem; border-bottom: 1px solid var(--line); }
